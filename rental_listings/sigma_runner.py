@@ -24,20 +24,9 @@ from sklearn.calibration import CalibratedClassifierCV
 LOAD_STACK = True
 
 class Objective(Enum):
-    SUBM_XGB = 1
-    GS_XGB = 2
-    GS_RFC = 3
-    GS_AB = 4
-    CALL_RFC = 5
-    CV_XGB = 6
-    STACK = 7
-    GS_FULL = 8
-    TSNE = 9
-    WEAK_CLF = 10
-    CV_RFC = 11
-    SUBM_RFC = 12
-    STACK_SUBM = 13
-    SVM = 14
+    STACK = 1
+    STACK_SUBM = 2
+
 
 def read_train_test(path='./'):
     return 0, 1
